@@ -112,7 +112,9 @@ class AVLTree<T : Comparable<T>> {
     }
 
     fun printTree() {
+        println("-----------------------------------------------------")
         root?.let { printTree(it) } ?: println("Дерево пусто")
+        println("-----------------------------------------------------")
     }
 
     private fun printTree(node: Node<T>, level: Int = 0, prefix: String = "") {
